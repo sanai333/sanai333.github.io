@@ -66,7 +66,7 @@ main {
 
 /* interests section styles */
 #interests {
-    border: 4px rgb(156, 156, 156) ridge;
+    border: 4px rgb(97, 95, 95) ridge;
     padding: 8px;
     margin-top: 20px;
 }
@@ -74,7 +74,7 @@ main {
 h2, h3 {
     margin: 0px;
 }body {
-    background: rgb(255, 171, 226);
+    background: rgb(224, 181, 209);
     color: rgb(0, 0, 0);
     padding: 25px;
     font-family: Arial, sans-serif;
@@ -87,7 +87,7 @@ h2, h3 {
 
 /* navigation menu */
 nav {
-    background: rgb(238, 0, 119);
+    background: rgb(221, 156, 189);
     margin: 0 auto;
     display: flex;
     padding: 10px;
