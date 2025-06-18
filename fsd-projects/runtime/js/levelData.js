@@ -19,11 +19,13 @@ var makeLevelData = function (window) {
           { type: "sawblade", x: 600, y: groundY },
           { type: "sawblade", x: 900, y: groundY },
           { type: "sawblade", x: 900, y: groundY },
+          
           {type: "enemy", x: 400, y: groundY - 50, speed: 3, image: "img/runtime-image.png", offsetX: -35, offsetY: -25, scale: 0.2},
           {type: "enemy", x: 900, y: groundY - 50, speed: 2, image: "img/runtime-image.png", offsetX: -35, offsetY: -25, scale: 0.2},
-          {type: "enemy", x: 1200, y: groundY - 50, speed:3, image: "img/runtime-image.png", offsetX: -35, offsetY: -25, scale: 0.2 },
-          {type: "reward", x: 300, y: groundY - 75, speed: 2,image:"img/reward-coin.png", offsetX: -25, offset: -15, scale: 0.5},
-          {type: "marker", x: 1500, y: groundY - 75, speed: 3},
+          {type: "enemy", x: 900, y: groundY - 50, speed: 2, image: "img/runtime-image.png", offsetX: -35, offsetY: -25, scale: 0.2},
+          {type: "enemy", x: 1200, y: groundY - 50, speed:3, image: "img/runtime-image.png", offsetX: -35, offsetY: -25, scale: 0.2},
+          {type: "reward", x: 300, y: groundY - 75, speed: 2,image:"img/reward-coin.png", offsetX: -45, offsetY: -45, scale: 0.08},
+          {type: "marker", x: 1500, y: groundY - 75, speed: 3, image: "img/runtime - marker.png", offsetX: -35, offsetY: -25, scale: 0.2},
           
 
 

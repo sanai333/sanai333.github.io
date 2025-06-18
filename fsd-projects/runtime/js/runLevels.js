@@ -34,6 +34,27 @@ var runLevels = function (window) {
       sawBladeHitZone.addChild(obstacleImage);
     }
 
+
+    function createFireBall(x, y, damage){
+      var hitZoneSize = 25;
+      var damageFromObstacle = damage;
+      var fireBallhitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
+      fireBallhitZone.x = x;
+      fireBallhitZone.y = y;
+       game.addGameItem(fireBallHitZone);
+      var obstacleImage = draw.bitmap("img/");
+      obstacleImage.x = -25;
+      obstacleImage.y = -25;
+      fireBallHitZone.addChild(obstacleImage);
+    }
+
+
+
+
+
+
+
+
     function createEnemy(x, y, speed, image, offsetX,offsetY, scale){
       var enemy = game.createGameItem("enemy", 25);
       var redSquare = draw.bitmap(image);
@@ -78,17 +99,18 @@ var runLevels = function (window) {
       reward.onProjectileCollision = function (){
       reward.flyTo(0,0);
         //reward.shrink();
-        //
-      //reward.fadeOut();
+        //reward.fadeOut();
     };
   }
 
 
-function createMarker(x,y, speed){
+function createMarker(x,y, speed, image, offsetX, offsetY, scale ){
       var marker = game.createGameItem("marker", 25);
-      var yellowSquare = draw.rect(50, 50, "yellow");
-      yellowSquare.x = -25;
-      yellowSquare.y = -25;
+      var yellowSquare = draw.bitmap(image);
+      yellowSquare.x = offsetX;
+      yellowSquare.y = offsetY;
+      yellowSquare.scaleX = scale;
+      yellowSquare.scaleY = scale;
       marker.addChild(yellowSquare);
       marker.x = x;
       marker.y = y;
