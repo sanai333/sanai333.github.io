@@ -73,12 +73,13 @@ var runLevels = function (window) {
       reward.onPlayerCollision = function () {
       game.changeIntegrity(10)
       game.increaseScore(100);
-      reward.fadeOut();
+      
       };
       reward.onProjectileCollision = function (){
-      
+      reward.flyTo(0,0);
         //reward.shrink();
-        //reward.flyTo(0,0);
+        //
+      //reward.fadeOut();
     };
   }
 
@@ -139,11 +140,11 @@ function createMarker(x,y, speed){
         }
 
         if(element.type === "reward"){
-          createReward(element.x, element.y, element.speed, );
+          createReward(element.x, element.y, element.speed, element.image, element.offsetX, element.offsetY, element.scale);
         }
 
         if(element.type === "marker"){
-          createMarker(element.x, element.y, element.speed);
+          createMarker(element.x, element.y, element.speed, element.image, element.offsetX, element.offsetY, element.scale);
         }
 
       }

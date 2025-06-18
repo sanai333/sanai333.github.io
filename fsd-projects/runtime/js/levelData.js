@@ -22,7 +22,7 @@ var makeLevelData = function (window) {
           {type: "enemy", x: 400, y: groundY - 50, speed: 3, image: "img/runtime-image.png", offsetX: -35, offsetY: -25, scale: 0.2},
           {type: "enemy", x: 900, y: groundY - 50, speed: 2, image: "img/runtime-image.png", offsetX: -35, offsetY: -25, scale: 0.2},
           {type: "enemy", x: 1200, y: groundY - 50, speed:3, image: "img/runtime-image.png", offsetX: -35, offsetY: -25, scale: 0.2 },
-          {type: "reward", x: 300, y: groundY - 75, speed: 2,image:"img/runtime-image.jpg", offsetX: -25, offset: -15, scale: 0.2},
+          {type: "reward", x: 300, y: groundY - 75, speed: 2,image:"img/reward-coin.png", offsetX: -25, offset: -15, scale: 0.5},
           {type: "marker", x: 1500, y: groundY - 75, speed: 3},
           
 
